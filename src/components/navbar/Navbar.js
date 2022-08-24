@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell,faMessage,faBoxArchive,faAssistiveListeningSystems  } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faMessage, faBoxArchive, faAssistiveListeningSystems } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import './Navbar.css'
 
@@ -20,10 +20,12 @@ const Navbar = () => {
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
-                        <FontAwesomeIcon icon={faBell}></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faBoxArchive}></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faAssistiveListeningSystems}></FontAwesomeIcon>
+                        <div className='ps-5 justify-content-between'>
+                            <a className='text-decoration-none text-secondary' href=""><FontAwesomeIcon icon={faBell}></FontAwesomeIcon></a>
+                            <a className='text-decoration-none text-secondary' href=""><FontAwesomeIcon icon={faMessage}></FontAwesomeIcon></a>
+                            <a className='text-decoration-none text-secondary' href=""><FontAwesomeIcon icon={faBoxArchive}></FontAwesomeIcon></a>
+                            <a className='text-decoration-none text-secondary' href=""><FontAwesomeIcon icon={faAssistiveListeningSystems}></FontAwesomeIcon></a>
+                        </div>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
