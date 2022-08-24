@@ -12,9 +12,9 @@ function App() {
         <Route path='/'>
           <Route index element={<Home />} />
           <Route path='login' element={<Login />} />
-          <Route path='users'>
+          <Route path='customer'>
             <Route index element={<List />} />
-            <Route path=':userID' element={<Single />} />
+            <Route path=':customerID' element={<Single />} />
             <Route path='new' element={<New />} />
           </Route>
           <Route path='orders'>
